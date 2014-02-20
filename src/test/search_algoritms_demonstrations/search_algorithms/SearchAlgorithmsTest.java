@@ -140,14 +140,14 @@ public class SearchAlgorithmsTest {
 	}
 
 	/* Private: */
-	private final static boolean FIX_START_AND_GOAL = true;
+	private final static boolean FIX_START_AND_GOAL = false;
 	private final static boolean DIAGONALS = true;
 	private final static boolean DEBUG = false;
-	private final static int DISTANCE_BEFORE_CHANGE = 1;
+	private final static int DISTANCE_BEFORE_CHANGE = 4;
 	private final static int MAZE_W = 20;
-	private final static int MAZE_H = 10;
+	private final static int MAZE_H = 20;
 	private final static int N_CHANGED_CELLS = (int) Math.round((MAZE_W * MAZE_H) * 0.5);
-	private final static int MAZE_CELL_MAX_COST = 4;
+	private final static int MAZE_CELL_MAX_COST = 10;
 	private final static float PROBABILITY_TO_BLOCK_A_CELL = 0.33f;
-	private final static TieBreakingStrategy tie_breaking_strategy = TieBreakingStrategy.HIGHEST_G_VALUES;
+	private final static TieBreakingStrategy tie_breaking_strategy = TieBreakingStrategy.NONE;
 }

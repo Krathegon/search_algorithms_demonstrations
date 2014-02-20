@@ -34,7 +34,9 @@ public class DStarLiteDemonstration implements WindowListener {
 		this.frame.add(new DStarLiteDemonstrationContainer());
 		this.frame.setMinimumSize(new Dimension(800, 600));
 		this.frame.pack();
+		this.frame.setLocationRelativeTo(null);
 		this.frame.setVisible(true);
+		this.frame.toFront();
 	}
 
 	@Override
